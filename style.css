@@ -75,3 +75,15 @@ textarea{
   text-align: left;
   display: inline;
 }
+
+.pastHour {
+  background-color: gray;
+}
+
+.currentHour {
+  background-color: red;
+}
+
+.futureHour {
+  background-color: green;
+}
