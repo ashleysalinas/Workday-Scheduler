@@ -77,13 +77,24 @@ textarea{
 }
 
 .pastHour {
-  background-color: gray;
+  background-color: #C6CDC9;
 }
 
 .currentHour {
-  background-color: red;
+  background-color: #F96B66;
 }
 
 .futureHour {
-  background-color: green;
+  background-color: #59FF9D;
 }
+
+.hourDisplay {
+  font-size: large;
+  padding-right: 5px;
+}
+
+.textArea {
+  width: 1000px;
+  border: none;
+}
+
