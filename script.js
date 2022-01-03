@@ -43,11 +43,12 @@ $('textarea').each(function() {
     $(this).val(localStorage.getItem($(this).siblings('section').text()))
 })
 
+
 //Function to change hour colors based on time of day
 function pastHours() {
-    let currentHour = moment().format('HH') //picks current hour in military time
+    let currentHour = Number(moment().format('HH')) //picks current hour in military time
     $('section').each(function() {
-        let id = $(this).attr("id")
+        let id = Number($(this).attr("id")) //Pull number to fix bug -> when using just the ID, the character codes made 8 & 9 seem greater than the current hour no matter what
 
         if (currentHour > id) {
             $(this).siblings('textarea').addClass('pastHour')
@@ -65,6 +66,6 @@ function pastHours() {
             $(this).siblings('textarea').removeClass('pastHour')
         }
     })
-    console.log(currentHour)
 }
 pastHours()
+
