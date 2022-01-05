@@ -1,4 +1,8 @@
 # Workday-Scheduler
+
+![](workdayscheduler.gif)
+
+
 Week 5 - Third Party APIs assignment for the Trilogy/Southern Methodist University Web Development Bootcamp
 
 ## About
